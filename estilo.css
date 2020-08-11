@@ -1,0 +1,166 @@
+html, body{
+    margin: 0;
+} 
+section{
+    padding: 1%;
+}
+header{
+    background-color: darkgreen;
+    color: white;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+
+h2, h3, h4, h5{
+    font-size: 50px; font-style: unset; font-weight: 700; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+p{
+    font-size: 20px; font-style: normal; font-weight: 600; font-family: 'Courier New', Courier, monospace;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#mim{
+    font-style: italic;
+}
+.p1 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: left;
+}
+.typing-animation {
+    animation: blinkCursor 500ms steps(40) infinite normal, 
+    typing  5s steps(40) 1s normal both;
+}
+
+@keyframes typing{
+    from {
+        width: 10px;
+    }
+    to {
+        width: 10em;
+    }
+}
+@keyframes blinkCursor{
+    from{
+        border-right-color: rgb(255, 255, 255)
+    }
+    to{
+        border-right-color: transparent;
+    }
+}
+
+
+#logo{
+    width: 96px;
+    position: absolute;
+    top: 0px;
+    margin-left: 5%;
+
+}
+#menu{
+    float: right;
+    margin-right: 5%;
+    list-style: none;
+}
+li{
+    float: left;
+    padding: 20 10 20 10;
+}
+li:hover{
+    background-color: rgb(255, 180, 0)
+}
+
+#imagemfundo{
+    background: url("imgs/fundo1.jpg");
+    background-size: cover;
+    height: 100%;
+    text-align: center;
+    
+}
+#titulo{
+    color: rgb(1, 218, 1);
+    padding-top: 25%;
+    font-size: 100px; font-weight: 500; font-family:unset;
+    text-shadow: 0px 5px 10px black, -8px -11px 3px rgb(40, 218, 40), -16px -21px 4px rgb(80, 218, 80), -24px -31px 5px rgb(120, 218, 120), -32px -41px 6px rgb(160, 218, 160);
+}
+
+#imgods2{
+    margin-top: auto;
+    width: 100%;
+
+}
+
+#caixa{
+    border: 4px darkred solid;
+    background-color: teal;
+    margin: 20px 200px 20px 200px;
+}
+.icone{
+    width: 55px;
+}
+.img{
+    width: 100%;
+}
+
+.destaque{
+    background-color: rgb(0, 255, 255);
+}
+.destaque2{
+    background-color: rgb(100, 255, 255);
+}
+
+.coluna{
+    float: left;
+    padding: 1% 5%;
+    position: relative;
+}
+.um{
+    width: 90%;
+}
+.dois{
+    width: 40%;
+}
+.tres{
+    width: 30%;
+}
+
+.justificado{
+    text-align: justify;
+}
+.centralizado{
+    text-align: center;
+}
+
+footer{
+    background-color: rgb(0, 150, 255);
+    float: left;
+}
+
+@media all and (max-width: 768px) {
+    #menu{
+        visibility: hidden;    
+    }
+    .coluna, .um, .dois, .tres{
+        display: block;
+        width: 80%;
+        padding: 10;
+        margin: 10px auto;
+        float: none;
+    }
+    #logodiv{
+        width: 100%;
+        position: relative;
+        text-align: center;
+        
+    }
+    #logo{
+        margin-right: 0px;
+        transform: translateX(-50%);
+    }
+    
+}
